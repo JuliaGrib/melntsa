@@ -7,10 +7,9 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* body {
-    background-color: #f1f1f1;
-} */
-
+:root {
+    --main-color: red;
+}
 
 .container {
     max-width: 320px;
@@ -23,23 +22,22 @@
 }
 
 .banner__img {
+    margin: 30px 0 0 0;
     width: 320px;
-    position: relative;
-    top: -20px;
+    
 }
 
 .banner__img img {
     width: 100%;
+    border-radius: 30px;
 }
 .title {
-    position: relative;
-    z-index: 1000;
 }
 
 .title__line {
     width: 55px;
     height: 6px;
-    background-color: red;
+    background-color: var(--main-color);
 }
 
 .title__header {
@@ -57,7 +55,7 @@
 .btn {
     display: block;
     margin: 0 auto;
-    background-color: red;
+    background-color: var(--main-color);
     width: 100%;
     padding: 20px;
     text-align: center;
@@ -65,12 +63,13 @@
     color: white;
     text-decoration: none;
     font-size: 20px;
+    font-weight: 600;
 }
 
 .price {
-    /* text-align: center; */
     font-size: 36px;
     font-weight: 800;
+    margin: 20px 0 0 0
 }
 
 .price span {
@@ -78,13 +77,110 @@
 }
 
 .subprice {
-    /* text-align: center; */
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     padding-bottom: 30px;
 }
 
 .subprice span {
     text-decoration: line-through;
+}
+
+
+
+
+
+
+/* About */
+
+
+.about {
+    margin: 40px 0 0 0;
+    background-color: #8080800a;
+    padding: 40px 0;
+}
+
+
+
+.about__text {
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+.about__img {
+    width: 320px;
+}
+
+.about__img img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+/* properties */
+
+
+.properties {
+    margin: 40px 0 0 0;
+}
+
+
+
+
+.properties__img {
+    padding: 30px 0;
+    width: 110px;
+    margin: 0 auto;
+}
+.properties__img img {
+    width: 100%;
+}
+
+.properties__list {
+    list-style-type: none;
+    font-weight: 300;
+}
+
+.properties__list li{
+    padding: 7px;
+}
+
+
+
+
+/* reviews */
+
+
+.reviews {
+    margin: 40px 0 0;
+    background-color: #8080800a;
+    padding: 40px 0;
+}
+
+
+.reviews__elem {
+    display: flex;
+    margin: 20px 0;
+}
+
+.reviews__elem img {
+    width: 30px;
+    height: 30px;
+    border-radius: 30px
+}
+
+.reviews__info {
+    padding: 20px;
+    background-color: #80808024;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    margin: 0 0 0 10px;
+}
+
+.reviews__info span{
+    font-weight: 600;
+    
 }
